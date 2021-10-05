@@ -186,13 +186,8 @@ button {
 
 button:hover {
  background-color: #9013fe;
- box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
  color: #fff;
  transform: translateY(-7px);
-}
-
-button:active {
- transform: translateY(-1px);
 }
 
 .info {
