@@ -6,11 +6,11 @@
       <button>Search</button>
     </form>
 
-    <div class="count">
+    <div class="count" v-if="!loneResult">
       <h2>All Results: {{ users.length }}</h2>
     </div>
 
-    <div class="before">
+    <div class="before" v-if="!loneResult">
       <div class="info" v-for="user in users">
         <div class="first">
           <img :src="user.avatar_url" alt="avatar_url">
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="info">
+    <div class="info" v-else>
       <div class="first">
         <img :src="githubData.avatar_url" alt="avatar_url">
         <div class="first-one">
@@ -67,8 +67,10 @@ export default {
   setup() {
     const { userName, searchUser, githubData } = useSearch()
     const users = ref([])
+    const loneResult = ref(false)
 
     const searchIt = async () => {
+      loneResult.value = true
       await searchUser()
     }
 
@@ -89,7 +91,8 @@ export default {
       userName,
       searchIt,
       githubData,
-      users
+      users,
+      loneResult
     }
   }
 }
