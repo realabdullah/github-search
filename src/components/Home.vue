@@ -152,6 +152,11 @@ form input {
   border: none;
   background: transparent;
   border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+form input::placeholder {
+  color: #fff;
 }
 
 form input:active {
