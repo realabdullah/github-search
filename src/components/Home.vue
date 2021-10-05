@@ -150,6 +150,14 @@ form input {
   border-bottom: 2px solid #fff;
 }
 
+form input:active {
+  border: none;
+}
+
+form input:focus {
+  border: none;
+}
+
 button {
   margin-left: 20px;
  padding: 1.3em 3em;
@@ -263,5 +271,18 @@ button:active {
 
 .third p span {
   color: #fff;
+}
+
+@media(max-width: 650px) {
+  .before {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    padding: 20px;
+  }
 }
 </style>
