@@ -310,6 +310,7 @@ button:active {
   }
 
   .second {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
