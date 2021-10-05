@@ -2,7 +2,7 @@
   <div class="form">
     <h1>GitHub Search</h1>
     <form @submit.prevent="searchIt">
-      <input type="text" placeholder="GitHub Username" v-model="userName">
+      <input type="text" placeholder="GitHub Username" v-model="userName" required>
       <button>Search</button>
     </form>
 
