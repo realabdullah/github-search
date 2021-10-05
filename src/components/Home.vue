@@ -168,7 +168,7 @@ form input:focus {
 }
 
 button {
-  margin-left: 20px;
+ margin-left: 20px;
  padding: 1.3em 3em;
  font-size: 12px;
  text-transform: uppercase;
@@ -284,14 +284,36 @@ button:active {
 
 @media(max-width: 650px) {
   .before {
+    width: 300px;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: unset;
     align-items: center;
     justify-content: center;
   }
 
   .form {
     padding: 20px;
+  }
+
+  form {
+    text-align: center;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  form button {
+    margin-top: 15px;
+  }
+
+  .before .info {
+    width: 300px;
+  }
+
+  .second {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: auto;
   }
 }
 </style>
