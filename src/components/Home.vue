@@ -7,7 +7,7 @@
     </form>
 
     <div class="count">
-      <h1>{{ users.length }}</h1>
+      <h2>All Results: {{ users.length }}</h2>
     </div>
 
     <div class="before">
@@ -97,13 +97,14 @@ export default {
 
 <style>
 .count {
+  margin-top: 40px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
 .before {
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
